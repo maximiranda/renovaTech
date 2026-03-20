@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RenovaTech | iPhones Reacondicionados con Garantía en Argentina</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-background": "#191c1e",
+                "surface-container-highest": "#e0e3e5",
+                "surface-container-low": "#f2f4f6",
+                "tertiary-fixed-dim": "#ffb596",
+                "on-surface": "#191c1e",
+                "inverse-surface": "#2d3133",
+                "outline-variant": "#c3c6d7",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#d8dadc",
+                "on-secondary-fixed": "#00174b",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#360f00",
+                "error-container": "#ffdad6",
+                "surface-container-lowest": "#ffffff",
+                "tertiary": "#943700",
+                "primary-fixed-dim": "#b4c5ff",
+                "on-tertiary-fixed-variant": "#7d2d00",
+                "outline": "#737686",
+                "surface": "#f7f9fb",
+                "surface-container-high": "#e6e8ea",
+                "inverse-primary": "#b4c5ff",
+                "on-primary-fixed-variant": "#003ea8",
+                "primary-fixed": "#dbe1ff",
+                "secondary-container": "#acbfff",
+                "tertiary-container": "#bc4800",
+                "surface-variant": "#e0e3e5",
+                "on-primary-fixed": "#00174b",
+                "on-primary-container": "#eeefff",
+                "on-tertiary-container": "#ffede6",
+                "primary-container": "#2563eb",
+                "secondary": "#495c95",
+                "surface-container": "#eceef0",
+                "secondary-fixed": "#dbe1ff",
+                "on-secondary-container": "#394c84",
+                "on-primary": "#ffffff",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed-variant": "#31447b",
+                "tertiary-fixed": "#ffdbcd",
+                "on-error": "#ffffff",
+                "secondary-fixed-dim": "#b4c5ff",
+                "surface-bright": "#f7f9fb",
+                "error": "#ba1a1a",
+                "surface-tint": "#0053db",
+                "on-surface-variant": "#434655",
+                "background": "#f7f9fb",
+                "inverse-on-surface": "#eff1f3",
+                "primary": "#004ac6"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Manrope', sans-serif; }
+        .glass-header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header shadow-sm bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto w-full">
+<!-- Brand Logo -->
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white">RenovaTech</span>
+</div>
+<!-- Search Bar (Desktop) -->
+<div class="hidden md:flex flex-1 max-w-lg mx-8">
+<div class="relative w-full group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-2.5 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary-container transition-all outline-none" placeholder="¿Qué iPhone estás buscando?" type="text"/>
+</div>
+</div>
+<!-- Navigation & Actions -->
+<nav class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-6 font-manrope text-sm font-medium tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-200" href="#">Garantía</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-all duration-200" href="#">Soporte</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="md:hidden p-2 hover:bg-slate-50 rounded-full transition-all active:scale-95 touch-manipulation">
+<span class="material-symbols-outlined text-slate-900">search</span>
+</button>
+<button class="p-2 relative hover:bg-slate-50 rounded-full transition-all active:scale-95 touch-manipulation">
+<span class="material-symbols-outlined text-slate-900">shopping_cart</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+</button>
+<button class="md:hidden p-2 hover:bg-slate-50 rounded-full transition-all active:scale-95 touch-manipulation">
+<span class="material-symbols-outlined text-slate-900">menu</span>
+</button>
+</div>
+</nav>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-24 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 space-y-8">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold tracking-wider uppercase">
+                    Refurbished de Grado A+
+                </div>
+<h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                    Tu próximo iPhone, impecable y a <span class="text-primary">mitad de precio.</span>
+</h1>
+<p class="text-xl text-slate-600 max-w-xl leading-relaxed">
+                    Testeados por técnicos locales en 40 puntos. 6 meses de garantía real y cambio directo para que compres con total tranquilidad.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform active:scale-95">
+                        Ver equipos disponibles
+                    </button>
+<button class="px-8 py-4 bg-surface-container-high text-on-surface font-bold rounded-xl hover:bg-surface-container-highest transition-colors active:scale-95">
+                        ¿Cómo trabajamos?
+                    </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="absolute inset-0 bg-primary/5 rounded-3xl -rotate-3 scale-105"></div>
+<img class="relative rounded-3xl w-full h-[500px] object-cover shadow-2xl" data-alt="Tres iPhones de diferentes colores flotando sobre fondo gris claro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaGvYRuJAjAb2HzITUIlDxXuo7iY0qt7mPXv0axOu6_st74sR1PIrV7om-ooj2790NJhbQqpZXW3cUd6Ph-8kyO61WM27aTiypV7PTXNEWonYjA0plGBeDiag8gNuGWjRFokqlxpGa_PaAAGqQBGFh0Gqsly2_LVeB14gSIi7oVSz58sJctH34NJK19rFNO9_EKFvK6_cJHp2c_GNT3yMq7wKBgm2QUhMTh9PcKd6CVjmtqD3PG-olAIbeZk0uMhz07LIQHM1oD_kQ"/>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-low py-12">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex items-center gap-4 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<h3 class="font-bold text-slate-900">Garantía de 6 meses</h3>
+<p class="text-sm text-slate-500">Cambio directo sin vueltas.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">credit_card</span>
+<div>
+<h3 class="font-bold text-slate-900">Mercado Pago</h3>
+<p class="text-sm text-slate-500">Hasta 3 cuotas sin interés.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">build_circle</span>
+<div>
+<h3 class="font-bold text-slate-900">Revisión Técnica</h3>
+<p class="text-sm text-slate-500">40 puntos de control certificados.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-extrabold text-slate-900">Stock disponible hoy</h2>
+<p class="text-slate-500 mt-2">Entrega inmediata en CABA y GBA. Envíos a todo el país.</p>
+</div>
+<a class="hidden md:block text-primary font-bold hover:underline underline-offset-4" href="#">Ver todo el catálogo</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="iPhone 13 Pro color azul sierra de frente" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnz3XQK3VOuJBjxfdi4J-zhRw0hZjtF7DN5g9EovuslLH8OoZjLpvYNfd7NMiTjeSDT34n06CN90D9x_Jo58HjocvcuhmxcKHz0OkRuYoanjUrvSvMHEiRHVPdMzBD8ZJHdjwxGwLhaTQqU9V11Gq0BnrFqCGXbFPdHeF9q_pEF3zYlwfr8ViX-CcxCYJQm03L4B5nYzei0VUG3skxczUyG5Mrp2_uQMJSWjz60_xFpp4LEzoYRdM9TktmWmi8YAKVyiZgGiC5JR0c"/>
+<span class="absolute top-3 left-3 px-3 py-1 bg-green-100 text-green-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Estado: Impecable</span>
+</div>
+<h3 class="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">iPhone 13 Pro - 128GB</h3>
+<p class="text-2xl font-black text-slate-900 mb-1">$ 900.000</p>
+<p class="text-green-600 text-sm font-semibold mb-6">3 cuotas de $ 300.000</p>
+<button class="mt-auto w-full py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
+                        Ver detalle
+                    </button>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="iPhone 12 color negro de frente y dorso" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8okXDeEq3J3XY28Ht3QyVqeelrj7LPi3gMhLHKFX76YxuWP22qBsbt2SEIYpbKi7ObWZLe6N2gnTixHLLBOFo_kIV_EX2xA_qDINNZdxl7gM4TPlE8er92e40mWKs_Olqkx8gKsleQMlWUO5ae5s7e77JASiH2waUw0_mLtf1Y43MMKLtndjDdmWZg35TzJpk1xPMJwYWDHhwd56_WixzVrJLhobC7dWOK35maOSehGmsKgpuZuyGh4gNNGRpuFQ2mGgfIb7iXT8X"/>
+<span class="absolute top-3 left-3 px-3 py-1 bg-green-100 text-green-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Estado: Impecable</span>
+</div>
+<h3 class="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">iPhone 12 - 64GB</h3>
+<p class="text-2xl font-black text-slate-900 mb-1">$ 550.000</p>
+<p class="text-green-600 text-sm font-semibold mb-6">3 cuotas de $ 183.333</p>
+<button class="mt-auto w-full py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
+                        Ver detalle
+                    </button>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="iPhone 11 color blanco sobre fondo claro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmuyP_pQjAM8jVhA18pqgjzj86FoO_ducwSsAkC2TePAfjfA0sUr0qHgU3UMaVCtSjEq2zsdSDczadINSsf_tGYAOk2wE3d3KY_K0kRbvozHABCMu9ykWCZu0Ooi9avkKAxAzqZ9WGquNgT1sFxzlJUo7CC15IjXNAHh77iheo6pgQCyoOlQ2vGZdAJK6XjmNTuc1PL8nDqnFpgMQDPxlCE5iysDKdVZPaylR2_htIpFlC3YMhvREM5nB4A2jPpneKEI8q5jjoVCic"/>
+<span class="absolute top-3 left-3 px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Estado: Excelente</span>
+</div>
+<h3 class="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">iPhone 11 - 128GB</h3>
+<p class="text-2xl font-black text-slate-900 mb-1">$ 420.000</p>
+<p class="text-green-600 text-sm font-semibold mb-6">3 cuotas de $ 140.000</p>
+<button class="mt-auto w-full py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
+                        Ver detalle
+                    </button>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-square flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="iPhone 14 color lila en primer plano" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxnjW5aZsSIHFPA4QDtr8VmUh6xtulo3-TQRcBO6IlB6rl4vcw5M9XQ7yu5qXGXyY4iM3RRqw3iIcMYQdS8oQl_q17KOeBPYzYGUWnpI7-nvhD0anw-wOvDMjVLsUklGiqoArTa_Qe0G-8zzd6Uwg01a1pXJLL0ZgWxkEbqfNUu8AbeMolwA4c2sqq_ieJ4_hX9oABsb0Ki0FtcDQeX4ROgbkEQvEg3Tgn4U2L36Hu7zqu26qxFlZmduuK0EKOZ4XuiCeYw_8Lo5m"/>
+<span class="absolute top-3 left-3 px-3 py-1 bg-green-100 text-green-700 text-[10px] font-bold uppercase rounded-full tracking-wider">Estado: Impecable</span>
+</div>
+<h3 class="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">iPhone 14 - 128GB</h3>
+<p class="text-2xl font-black text-slate-900 mb-1">$ 1.100.000</p>
+<p class="text-green-600 text-sm font-semibold mb-6">3 cuotas de $ 366.666</p>
+<button class="mt-auto w-full py-3 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all active:scale-95">
+                        Ver detalle
+                    </button>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="max-w-7xl mx-auto px-6 py-20 border-t border-surface-container-high">
+<h2 class="text-3xl font-extrabold text-slate-900 text-center mb-16">Lo que dicen nuestros clientes</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-8 rounded-2xl">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-slate-700 mb-6 italic">"Compré un iPhone 13 Pro y está literalmente nuevo. La batería al 100% y ni una raya. Me ahorré muchísima plata."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">MS</div>
+<div>
+<p class="font-bold text-slate-900">Martín S.</p>
+<p class="text-xs text-slate-500">Compra verificada</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-8 rounded-2xl">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-slate-700 mb-6 italic">"Tenía miedo de comprar usado, pero la garantía de 6 meses me dio confianza. Me llegó en 24hs a casa."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary">LF</div>
+<div>
+<p class="font-bold text-slate-900">Lucía F.</p>
+<p class="text-xs text-slate-500">Compra verificada</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-8 rounded-2xl">
+<div class="flex gap-1 mb-4">
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-slate-700 mb-6 italic">"Excelente atención por WhatsApp. Me mandaron fotos reales del equipo antes de comprarlo. Muy recomendados."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-tertiary">GP</div>
+<div>
+<p class="font-bold text-slate-900">Gonzalo P.</p>
+<p class="text-xs text-slate-500">Compra verificada</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full pt-16 pb-8 border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 max-w-7xl mx-auto font-inter text-slate-400 text-sm leading-relaxed">
+<!-- Bio -->
+<div class="col-span-1">
+<span class="text-xl font-bold text-white mb-4 block">RenovaTech</span>
+<p>Especialistas en iPhones reacondicionados en Argentina. Calidad certificada y confianza en cada entrega.</p>
+</div>
+<!-- Medios de Pago -->
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Medios de Pago</h4>
+<ul class="space-y-3">
+<li class="hover:text-white transition-colors cursor-pointer">Mercado Pago</li>
+<li class="hover:text-white transition-colors cursor-pointer">Transferencia Bancaria</li>
+<li class="hover:text-white transition-colors cursor-pointer">Efectivo (Puntos de entrega)</li>
+<li class="hover:text-white transition-colors cursor-pointer">Envíos</li>
+</ul>
+</div>
+<!-- Soporte -->
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Soporte</h4>
+<ul class="space-y-3">
+<li class="hover:text-white transition-colors cursor-pointer">Garantía Oficial</li>
+<li class="hover:text-white transition-colors cursor-pointer">Servicio Técnico</li>
+<li class="hover:text-white transition-colors cursor-pointer">Seguimiento de envío</li>
+</ul>
+</div>
+<!-- Legales -->
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Legales</h4>
+<ul class="space-y-3">
+<li class="hover:text-white transition-colors cursor-pointer">Términos y Condiciones</li>
+<li class="hover:text-white transition-colors cursor-pointer">Privacidad</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-800 text-center">
+<p>© 2024 RenovaTech Argentina. Especialistas en iPhones Reacondicionados.</p>
+</div>
+</footer>
+<!-- FAB (SideNavBar / WhatsApp CTA) -->
+<div class="fixed bottom-6 right-6 z-50">
+<a class="bg-green-500 dark:bg-green-600 rounded-full w-14 h-14 flex items-center justify-center text-white shadow-lg shadow-green-500/40 hover:scale-110 hover:rotate-12 transition-all duration-300 active:scale-90 group" href="https://wa.me/yournumber" target="_blank">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<!-- Tooltip -->
+<span class="absolute right-16 bg-white text-slate-900 px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                ¿Dudas? Chateemos
+            </span>
+</a>
+</div>
+</body></html>
